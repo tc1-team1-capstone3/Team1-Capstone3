@@ -22,7 +22,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public ProductResponse createProduct(@RequestBody ProductRequest productRequest) {
+    public ProductResponse createProduct(ProductRequest productRequest) {
         ProductDto productDto = new ProductDto();
         BeanUtils.copyProperties(productRequest, productDto);
 
